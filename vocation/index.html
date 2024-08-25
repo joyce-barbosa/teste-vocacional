@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Vocacional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Teste Vocacional</h1>
+        <form action="process.php" method="POST">
+            <div class="question">
+                <h3>Na escola, você prefere assuntos ligados a:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q1" value="a"> a) Arte, esportes e atividades
+                            extracurriculares.</label></li>
+                    <li><label><input type="radio" name="q1" value="b"> b) Biologia e genética.</label></li>
+                    <li><label><input type="radio" name="q1" value="c"> c) Ciências humanas, idiomas.</label></li>
+                    <li><label><input type="radio" name="q1" value="d"> d) Ciências exatas.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Você prefere levar sua vida:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q2" value="a"> a) Com pouca rotina e poucas regras.</label>
+                    </li>
+                    <li><label><input type="radio" name="q2" value="b"> b) Com regras definidas e disciplina.</label>
+                    </li>
+                    <li><label><input type="radio" name="q2" value="c"> c) Interagindo com todo tipo de pessoa.</label>
+                    </li>
+                    <li><label><input type="radio" name="q2" value="d"> d) Com muita autonomia: "na sua".</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Você se descreveria como uma pessoa:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q3" value="a"> a) Impulsiva e um tanto aventureira.</label>
+                    </li>
+                    <li><label><input type="radio" name="q3" value="b"> b) Cautelosa e responsável.</label></li>
+                    <li><label><input type="radio" name="q3" value="c"> c) Entusiasmada e muito amiga.</label></li>
+                    <li><label><input type="radio" name="q3" value="d"> d) Calma e diferente da maioria.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Você se considera uma pessoa:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q4" value="a"> a) Prática e hábil para improvisar.</label></li>
+                    <li><label><input type="radio" name="q4" value="b"> b) Batalhadora, que sabe o que quer.</label>
+                    </li>
+                    <li><label><input type="radio" name="q4" value="c"> c) Preocupada com questões humanas.</label></li>
+                    <li><label><input type="radio" name="q4" value="d"> d) Capacitada para criar e inventar.</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>De quais características suas você sente orgulho:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q5" value="a"> a) Audácia e facilidade para lidar com o
+                            inesperado.</label></li>
+                    <li><label><input type="radio" name="q5" value="b"> b) Senso de dever e capacidade de dar
+                            exemplo.</label></li>
+                    <li><label><input type="radio" name="q5" value="c"> c) Idealismo e disposição para compreender os
+                            outros.</label></li>
+                    <li><label><input type="radio" name="q5" value="d"> d) Engenhosidade e rapidez mental.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Costuma confiar mais em:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q6" value="a"> a) Percepção imediata.</label></li>
+                    <li><label><input type="radio" name="q6" value="b"> b) Costumes e tradições.</label></li>
+                    <li><label><input type="radio" name="q6" value="c"> c) Intuição.</label></li>
+                    <li><label><input type="radio" name="q6" value="d"> d) Razão e lógica.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Quase sempre, você gosta de:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q7" value="a"> a) Causar impacto: os "holofotes" o
+                            atraem.</label></li>
+                    <li><label><input type="radio" name="q7" value="b"> b) Ser visto como membro valioso de um
+                            grupo.</label></li>
+                    <li><label><input type="radio" name="q7" value="c"> c) Sonhar em transformar o mundo.</label></li>
+                    <li><label><input type="radio" name="q7" value="d"> d) Desvendar um enigma ou inventar algo
+                            útil.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>A vida é mais interessante quando você tem:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q8" value="a"> a) Desafios, situações cambiantes.</label></li>
+                    <li><label><input type="radio" name="q8" value="b"> b) Segurança, emprego garantido, integração
+                            social.</label></li>
+                    <li><label><input type="radio" name="q8" value="c"> c) Possibilidade de fazer algo para mudar o
+                            mundo.</label></li>
+                    <li><label><input type="radio" name="q8" value="d"> d) Possibilidade de ir além do que já é
+                            conhecido.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Você gostaria de ser:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q9" value="a"> a) Um craque na profissão que escolher.</label>
+                    </li>
+                    <li><label><input type="radio" name="q9" value="b"> b) Um executivo bem-sucedido.</label></li>
+                    <li><label><input type="radio" name="q9" value="c"> c) Um profissional de prestígio.</label></li>
+                    <li><label><input type="radio" name="q9" value="d"> d) Um especialista ou um cientista.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Você é muito bom lidando com:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q10" value="a"> a) Ferramentas, instrumentos e
+                            equipamentos.</label></li>
+                    <li><label><input type="radio" name="q10" value="b"> b) Controle do tempo, comando e
+                            execução.</label></li>
+                    <li><label><input type="radio" name="q10" value="c"> c) Pessoas de todos os níveis sociais e
+                            culturais.</label></li>
+                    <li><label><input type="radio" name="q10" value="d"> d) Sistemas e construção (material ou
+                            mental).</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Antes de agir, você analisa:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q11" value="a"> a) As vantagens imediatas.</label></li>
+                    <li><label><input type="radio" name="q11" value="b"> b) As experiências já vividas.</label></li>
+                    <li><label><input type="radio" name="q11" value="c"> c) As possibilidades futuras.</label></li>
+                    <li><label><input type="radio" name="q11" value="d"> d) As condições e consequências.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Gosta quando as pessoas:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q12" value="a"> a) O surpreendem com um presente.</label></li>
+                    <li><label><input type="radio" name="q12" value="b"> b) Expressam gratidão por algo que fez.</label>
+                    </li>
+                    <li><label><input type="radio" name="q12" value="c"> c) Reconhecem sua personalidade
+                            singular.</label></li>
+                    <li><label><input type="radio" name="q12" value="d"> d) Reconhecem sua inteligência.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Você costuma abraçar um novo projeto:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q13" value="a"> a) Com a cara e a coragem.</label></li>
+                    <li><label><input type="radio" name="q13" value="b"> b) Guiado pela experiência.</label></li>
+                    <li><label><input type="radio" name="q13" value="c"> c) Confiando na intuição e na
+                            criatividade.</label></li>
+                    <li><label><input type="radio" name="q13" value="d"> d) Depois de verificar todas as
+                            variáveis.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Geralmente, você prefere agir:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q14" value="a"> a) No calor do momento.</label></li>
+                    <li><label><input type="radio" name="q14" value="b"> b) Com segurança e conforme o costume.</label>
+                    </li>
+                    <li><label><input type="radio" name="q14" value="c"> c) Quando está inspirado.</label></li>
+                    <li><label><input type="radio" name="q14" value="d"> d) Quando um problema o desafia.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Você fica motivado quando:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q15" value="a"> a) Tem a oportunidade de superar
+                            obstáculos.</label></li>
+                    <li><label><input type="radio" name="q15" value="b"> b) Experimenta estabilidade na vida
+                            profissional.</label></li>
+                    <li><label><input type="radio" name="q15" value="c"> c) Harmonia e inspiração guiam a
+                            atividade.</label></li>
+                    <li><label><input type="radio" name="q15" value="d"> d) Há liberdade para projetar o futuro.</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Em atividades em grupo, você prefere:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q16" value="a"> a) As desafiadoras, que exigem ação
+                            rápida.</label></li>
+                    <li><label><input type="radio" name="q16" value="b"> b) Administrar os recursos disponíveis.</label>
+                    </li>
+                    <li><label><input type="radio" name="q16" value="c"> c) Motivar as pessoas para darem o melhor de
+                            si.</label></li>
+                    <li><label><input type="radio" name="q16" value="d"> d) Descartar logo o que não funciona.</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Liderar é uma atividade que gosta de exercer:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q17" value="a"> a) Por pouco tempo e dependendo da
+                            situação.</label></li>
+                    <li><label><input type="radio" name="q17" value="b"> b) Quando pode comandar do começo ao
+                            fim.</label></li>
+                    <li><label><input type="radio" name="q17" value="c"> c) Quando é preciso identificar e reunir
+                            talentos.</label></li>
+                    <li><label><input type="radio" name="q17" value="d"> d) Quando o raciocínio estratégico é
+                            necessário.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Em uma escola, você gostaria de ser:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q18" value="a"> a) Professor de educação física.</label></li>
+                    <li><label><input type="radio" name="q18" value="b"> b) Diretor.</label></li>
+                    <li><label><input type="radio" name="q18" value="c"> c) Professor de literatura.</label></li>
+                    <li><label><input type="radio" name="q18" value="d"> d) Professor de matemática ou física.</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>É um elogio quando se referem a você como:</h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q19" value="a"> a) Corajoso, otimista e divertido.</label></li>
+                    <li><label><input type="radio" name="q19" value="b"> b) cauteloso, responsável e aplicado.</label>
+                    </li>
+                    <li><label><input type="radio" name="q19" value="c"> c) harmonizador, íntegro e sábio.</label></li>
+                    <li><label><input type="radio" name="q19" value="d"> d) uma mente brilhante.</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <h3>Frase que tem a ver com você:</h3>
+                </h3>
+                <ul class="options">
+                    <li><label><input type="radio" name="q20" value="a"> a) "deixo a vida me levar...".</label></li>
+                    <li><label><input type="radio" name="q20" value="b"> b) "manda quem pode; obedece quem tem
+                            juízo".</label></li>
+                    <li><label><input type="radio" name="q20" value="c"> c) "para seu próprio interesse, seja
+                            verdadeiro".</label></li>
+                    <li><label><input type="radio" name="q20" value="d"> d) "penso, logo existo".</label></li>
+                </ul>
+            </div>
+            <button type="submit" class="submit-btn">Enviar Respostas</button>
+        </form>
+    </div>
+</body>
+
+</html>
